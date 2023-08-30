@@ -1,7 +1,5 @@
 import { useCart } from "../context/CartContext";
 import { useUser } from "../context/UserContext";
-import { API, ServerURL } from "../utils";
-import { Rating } from '@smastrom/react-rating';
 
 
 

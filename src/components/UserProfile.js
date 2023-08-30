@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { API, ServerURL } from "../utils";
-import { Link, useParams } from "react-router-dom";
-import { useWish } from "../context/WishContext";
-import {Routes, Route} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import VerticalTabs from "./TabsContainer";
 import { useUser } from "../context/UserContext";
 import Swal from 'sweetalert2'
@@ -15,7 +13,6 @@ const UserProfile = () => {
   const [role, setRole] = useState();
   const [tickets, setTickets] = useState([]);
   const [newPass, setNewPass] = useState();
-  const [passConfirmation, setPassConfirmation] = useState();
   const [wishlist, setWishlist] = useState([]);
   const [owner, setOwner] = useState()
 
